@@ -1,0 +1,271 @@
+{
+  "Brand": {
+    "name": "Solving Crew",
+    "short": "From problem to production",
+    "promise": "From problem to production — with the right people.",
+    "playful": "We solve all your problems.",
+    "description": "Senior-led product engineering. Start with the roles you need and scale as projects grow."
+  },
+  "Nav": {
+    "home": "Home",
+    "services": "Services",
+    "expertise": "Expertise",
+    "technology": "Technology",
+    "team": "Team",
+    "contact": "Contact",
+    "getInTouch": "Get in touch"
+  },
+  "Footer": {
+    "ico": "IČO",
+    "dic": "DIČ",
+    "menu": "Menu",
+    "company": "Company"
+  },
+  "Home": {
+    "kicker": "Senior-led product engineering partner",
+    "subheadline": "PropTech & FinTech experience • EU-based delivery • Start small and scale as your pipeline grows.",
+    "ctaPrimary": "Contact us",
+    "ctaSecondary": "See services",
+    "highlights": {
+      "h1": {
+        "badge": "Solution-first",
+        "title": "We solve constraints, not org charts",
+        "text": "We propose the smallest team shape that unblocks progress — and scale only when it pays off."
+      },
+      "h2": {
+        "badge": "Production mindset",
+        "title": "Build + run, reliably",
+        "text": "IaC, observability, CI/CD and testing are part of delivery — not an afterthought."
+      },
+      "h3": {
+        "badge": "Serious domains",
+        "title": "PropTech, FinTech, B2B SaaS",
+        "text": "Integrations, data-heavy systems and regulated environments where reliability matters."
+      }
+    },
+    "heroBullets": [
+        {
+          "title": "Small team, senior-led",
+          "text": "We join as a compact crew that unblocks delivery fast."
+        },
+        {
+          "title": "Production-first delivery",
+          "text": "CI/CD, observability and quality are part of delivery — not an afterthought."
+        },
+        {
+          "title": "Domain depth",
+          "text": "PropTech & FinTech experience for integration-heavy, data-rich systems."
+        }
+      ],
+      "heroChip": "Typically reply within 24h",
+    "stackTitle": "Core tech stack",
+    "stackNote": "High-performance, event-driven architecture across the full stack.",
+    "stack": [
+      "Java (Quarkus/Spring)",
+      "Node.js",
+      "Go",
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Postgres",
+      "NATS JetStream",
+      "ElasticSearch",
+      "Valkey/Redis",
+      "Kubernetes",
+      "Terraform",
+      "Prometheus/Grafana/Loki",
+      "AWS (EKS)",
+      "Playwright/Cypress",
+      "Figma"
+    ],
+    "ctaBlock": {
+      "title": "Tell us what’s blocking you",
+      "text": "One role, a small pod, or a delivery lane — we’ll propose a shape that fits.",
+      "button": "Start the conversation"
+    }
+  },
+  "Services": {
+    "title": "Services",
+    "lead": "Flexible delivery: start with one role, grow into a pod, scale into multiple delivery lanes.",
+    "pricingLead": "Typical average rate starts around €30/hour per developer. Final rate depends on role and scope.",
+    "modelsTitle": "Engagement models",
+    "models": {
+      "role": {
+        "title": "Single role",
+        "text": "Add a senior engineer, QA, DevOps or designer to unblock a specific area."
+      },
+      "pod": {
+        "title": "Pod",
+        "text": "A small cross-functional crew (e.g., BE+FE+QA) to deliver a clear slice end-to-end."
+      },
+      "lane": {
+        "title": "Delivery lane",
+        "text": "A stable team that owns outcomes and keeps shipping with quality and observability."
+      }
+    },
+    "optionsTitle": "Engagement options",
+    "availabilityBadge": "Available",
+    "options": {
+      "o1": {
+        "badge": "Team extension",
+        "title": "Plug-in experts",
+        "text": "Add backend, frontend, QA or DevOps for as long as you need."
+      },
+      "o2": {
+        "badge": "Delivery squad",
+        "title": "Outcome-focused squad",
+        "text": "A small cross-functional team that ships features end-to-end."
+      },
+      "o3": {
+        "badge": "Rescue & stabilization",
+        "title": "Fix what’s stuck",
+        "text": "Audit, unblock, improve reliability—then hand over cleanly."
+      }
+    },
+    "processTitle": "How we work",
+    "process": {
+      "p1": {
+        "title": "Understand",
+        "text": "Quick call to align on goals, constraints and success criteria."
+      },
+      "p2": {
+        "title": "Match",
+        "text": "We propose the right people and a plan—usually within days."
+      },
+      "p3": {
+        "title": "Ship",
+        "text": "We integrate with your workflow and deliver continuously."
+      }
+    },
+    "pricingTitle": "Simple pricing",
+    "pricing": {
+      "rateLabel": "Average developer rate",
+      "rate": "€30 / hour",
+      "note": "Billed monthly. No long contracts—scale up or down as projects change."
+    },
+    "includesTitle": "What’s included",
+    "includes": [
+      "English-speaking team",
+      "Clear ownership & reporting",
+      "QA and code reviews",
+      "EU timezone overlap",
+      "Security & NDA-ready"
+    ],
+    "cta": {
+      "title": "Not sure what you need?",
+      "text": "Describe the bottleneck — we’ll propose the smallest effective crew.",
+      "button": "Contact"
+    }
+  },
+  "Expertise": {
+    "title": "Expertise",
+    "lead": "We work in complex domains where reliability, speed and clarity matter.",
+    "capabilitiesTitle": "Capabilities",
+    "capabilities": [
+      "Product engineering (discovery to production)",
+      "Architecture & tech leadership",
+      "High-load backend & event-driven systems",
+      "Data-heavy integrations and APIs",
+      "Cloud & DevOps (Kubernetes, IaC, observability)",
+      "QA automation & quality engineering",
+      "Design systems & UX delivery"
+    ],
+    "areas": {
+      "proptech": {
+        "title": "PropTech",
+        "text": "Listings, valuation, integrations, back-office workflows, reporting and customer portals."
+      },
+      "fintech": {
+        "title": "FinTech",
+        "text": "Payments, identity, compliance-sensitive flows and audit-friendly delivery."
+      },
+      "highload": {
+        "title": "High-load & platforms",
+        "text": "Event-driven architecture, performance, scalability, observability and operations."
+      }
+    },
+    "areasBadge": {
+      "proptech": {
+        "badge": "PropTech"
+      },
+      "fintech": {
+        "badge": "FinTech"
+      },
+      "highload": {
+        "badge": "High-load"
+      }
+    }
+  },
+  "Technology": {
+    "title": "Technology",
+    "lead": "Modern stack, production-first engineering, and pragmatic choices based on constraints.",
+    "sectionsTitle": "Technology areas",
+    "principlesTitle": "Principles",
+    "principles": [
+      "Ship small increments",
+      "Make it observable",
+      "Automate quality",
+      "Design for ownership",
+      "Keep operational load low",
+      "Measure impact"
+    ],
+    "sections": {
+      "backend": {
+        "title": "Backend",
+        "text": "Java (Quarkus/Spring), Node.js, Go • microservices • REST/GraphQL • event-driven messaging."
+      },
+      "frontend": {
+        "title": "Frontend",
+        "text": "React, Next.js, TypeScript • design systems • accessible UI • performance."
+      },
+      "mobile": {
+        "title": "Mobile",
+        "text": "Pragmatic mobile delivery where needed (hybrid or native depending on constraints)."
+      },
+      "platform": {
+        "title": "Platform & Cloud",
+        "text": "Production-ready infrastructure, CI/CD and observability."
+      },
+      "data": {
+        "title": "Data & search",
+        "text": "Postgres, ElasticSearch • data pipelines • analytics-friendly models."
+      },
+      "quality": {
+        "title": "Quality engineering",
+        "text": "Automation-first mindset • Playwright/Cypress • contract testing where it pays off."
+      },
+      "design": {
+        "title": "Design",
+        "text": "Figma-driven delivery • UX prototypes • design systems and component libraries."
+      }
+    }
+  },
+  "Team": {
+    "title": "Team",
+    "comingSoon": "Profiles & leadership details will be published in February 2026."
+  },
+  "Contact": {
+    "title": "Contact",
+    "lead": "Tell us what’s blocking you. We’ll propose the right people and a delivery shape that fits.",
+    "placeholders": {
+      "email": "hello@yourcompany.com",
+      "phone": "+420 000 000 000",
+      "address": "Address placeholder"
+    },
+    "ctaTitle": "Start the conversation",
+    "ctaText": "Briefly describe your problem and expected timeline. We’ll respond with a proposal.",
+    "emailLabel": "Email",
+    "phoneLabel": "Phone",
+    "notes": {
+      "privacy": "We’ll only use your details to respond. No spam."
+    },
+    "form": {
+      "name": "Your name",
+      "company": "Company (optional)",
+      "message": "Message",
+      "submit": "Send",
+      "success": "Thank you for your message!",
+      "error": "An error occurred. Please try again later."
+    }
+  }
+}

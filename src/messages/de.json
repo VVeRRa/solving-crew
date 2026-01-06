@@ -1,0 +1,258 @@
+{
+  "Brand": {
+    "name": "Solving Crew",
+    "short": "From problem to production",
+    "promise": "From problem to production — with the right people.",
+    "playful": "We solve all your problems.",
+    "description": "Senior-led Product Engineering. Start small and scale as projects grow."
+  },
+  "Nav": {
+    "home": "Start",
+    "services": "Leistungen",
+    "expertise": "Expertise",
+    "technology": "Technologie",
+    "team": "Team",
+    "contact": "Kontakt",
+    "getInTouch": "Kontakt aufnehmen"
+  },
+  "Footer": {
+    "ico": "IČO",
+    "dic": "DIČ",
+    "menu": "Menu",
+    "company": "Firma"
+  },
+  "Home": {
+    "kicker": "Senior-geführter Product-Engineering-Partner",
+    "subheadline": "PropTech- & FinTech-Erfahrung • Delivery in der EU • Klein starten, mit der Pipeline skalieren.",
+    "ctaPrimary": "Kontakt",
+    "ctaSecondary": "Leistungen ansehen",
+    "highlights": {
+      "h1": {
+        "badge": "Solution-first",
+        "title": "Wir lösen Constraints, nicht Org-Charts",
+        "text": "Wir schlagen die kleinste Team-Form vor, die Fortschritt ermöglicht — und skalieren nur wenn es sich lohnt."
+      },
+      "h2": {
+        "badge": "Production mindset",
+        "title": "Build + run, zuverlässig",
+        "text": "IaC, Observability, CI/CD und Testing gehören zur Lieferung — nicht als Add-on."
+      },
+      "h3": {
+        "badge": "Seriöse Domänen",
+        "title": "PropTech, FinTech, B2B SaaS",
+        "text": "Integrationen, datenintensive Systeme und regulierte Umgebungen, in denen Reliability zählt."
+      }
+    },
+    "heroBullets": [
+      {
+        "title": "Kleines Team, senior-geführt",
+        "text": "Wir steigen als kompakte Crew ein und bringen Delivery schnell wieder ins Laufen."
+      },
+      {
+        "title": "Production-first Delivery",
+        "text": "CI/CD, Observability und Qualität sind von Anfang an dabei — nicht später."
+      },
+      {
+        "title": "Domänen-Know-how",
+        "text": "PropTech- & FinTech-Erfahrung für integrations- und datenintensive Systeme."
+      }
+    ],
+    "heroChip": "Antwort meist innerhalb von 24 Std.",
+    "stackTitle": "Core Tech Stack",
+    "stackNote": "High-performance, event-driven Architektur über den gesamten Stack.",
+    "stack": [
+      "Java (Quarkus/Spring)",
+      "Node.js",
+      "Go",
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Postgres",
+      "NATS JetStream",
+      "ElasticSearch",
+      "Valkey/Redis",
+      "Kubernetes",
+      "Terraform",
+      "Prometheus/Grafana/Loki",
+      "AWS (EKS)",
+      "Playwright/Cypress",
+      "Figma"
+    ],
+    "ctaBlock": {
+      "title": "Sagen Sie uns, was Sie blockiert",
+      "text": "Eine Rolle, ein kleines Pod oder ein Delivery-Lane — wir schlagen eine passende Form vor.",
+      "button": "Gespräch starten"
+    }
+  },
+  "Services": {
+    "title": "Leistungen",
+    "lead": "Vom Problem zur Produktion — mit den richtigen Leuten.",
+    "includesTitle": "Inklusive",
+    "includes": [
+      "Product & Engineering Leadership nach Bedarf",
+      "QA & DevOps in der Lieferung enthalten",
+      "CI/CD, Observability und Release-Hygiene",
+      "Rituale: Planning, Demos, Retros",
+      "Dokumentation und Übergabe",
+      "Englischsprachiges Team",
+      "Klare Ownership & Reporting",
+      "QA und Code Reviews",
+      "EU-Zeitzonen-Überlappung",
+      "Security & NDA-ready"
+    ],
+    "cta": {
+      "button": "Kontakt aufnehmen"
+    },
+    "optionsTitle": "Zusammenarbeitsmodelle",
+    "availabilityBadge": "Verfügbar",
+    "options": {
+      "o1": {
+        "badge": "Team-Erweiterung",
+        "title": "Experten dazu holen",
+        "text": "Backend, Frontend, QA oder DevOps – so lange wie nötig."
+      },
+      "o2": {
+        "badge": "Delivery Squad",
+        "title": "Ergebnisorientiertes Squad",
+        "text": "Ein kleines cross-funktionales Team liefert Features end-to-end."
+      },
+      "o3": {
+        "badge": "Rescue & Stabilisierung",
+        "title": "Wenn es klemmt",
+        "text": "Audit, Entblocken, Stabilisierung – dann sauber übergeben."
+      }
+    },
+    "processTitle": "So arbeiten wir",
+    "process": {
+      "p1": {
+        "title": "Verstehen",
+        "text": "Kurzer Call: Ziele, Rahmenbedingungen, Erfolgskriterien."
+      },
+      "p2": {
+        "title": "Match",
+        "text": "Wir schlagen die passenden Leute und einen Plan vor – meist in Tagen."
+      },
+      "p3": {
+        "title": "Liefern",
+        "text": "Wir integrieren uns in euren Workflow und liefern kontinuierlich."
+      }
+    },
+    "pricingTitle": "Einfaches Pricing",
+    "pricing": {
+      "rateLabel": "Durchschnittlicher Entwickler-Satz",
+      "rate": "€30 / Stunde",
+      "note": "Monatliche Abrechnung. Keine langen Verträge – flexibel skalieren."
+    }
+  },
+  "Expertise": {
+    "title": "Expertise",
+    "lead": "Wir arbeiten in komplexen Domänen, in denen Reliability, Tempo und Klarheit zählen.",
+    "capabilitiesTitle": "Capabilities",
+    "capabilities": [
+      "Product Engineering (Discovery bis Production)",
+      "Architektur & Tech Leadership",
+      "High-load Backend & event-driven Systeme",
+      "Data-heavy Integrationen und APIs",
+      "Cloud & DevOps (Kubernetes, IaC, Observability)",
+      "QA Automation & Quality Engineering",
+      "Design Systems & UX Delivery"
+    ],
+    "areas": {
+      "proptech": {
+        "title": "PropTech",
+        "text": "Listings, Valuation, Integrationen, Back-office Workflows, Reporting und Portale."
+      },
+      "fintech": {
+        "title": "FinTech",
+        "text": "Payments, Identity, compliance-sensible Flows und auditfreundliche Delivery."
+      },
+      "highload": {
+        "title": "High-load & Plattformen",
+        "text": "Event-driven Architektur, Performance, Skalierung, Observability und Operations."
+      }
+    },
+    "areasBadge": {
+      "proptech": {
+        "badge": "PropTech"
+      },
+      "fintech": {
+        "badge": "FinTech"
+      },
+      "highload": {
+        "badge": "High-Load"
+      }
+    }
+  },
+  "Technology": {
+    "title": "Technologie",
+    "lead": "Moderner Stack, production-first Engineering und pragmatische Entscheidungen nach Constraints.",
+    "sectionsTitle": "Bereiche",
+    "principlesTitle": "Prinzipien",
+    "principles": [
+      "Klein liefern",
+      "Beobachtbar machen",
+      "Qualität automatisieren",
+      "Ownership ermöglichen",
+      "Operative Last senken",
+      "Impact messen"
+    ],
+    "sections": {
+      "backend": {
+        "title": "Backend",
+        "text": "Java (Quarkus/Spring), Node.js, Go • Microservices • REST/GraphQL • event-driven Messaging."
+      },
+      "frontend": {
+        "title": "Frontend",
+        "text": "React, Next.js, TypeScript • Design Systems • Accessibility • Performance."
+      },
+      "mobile": {
+        "title": "Mobile",
+        "text": "Pragmatische Mobile-Delivery je nach Bedarf (Hybrid/Native je nach Constraints)."
+      },
+      "data": {
+        "title": "Data & Search",
+        "text": "Postgres, ElasticSearch • Pipelines • Analytics-freundliche Modelle."
+      },
+      "quality": {
+        "title": "Quality Engineering",
+        "text": "Automation-first • Playwright/Cypress • Contract Testing, wo es sich lohnt."
+      },
+      "design": {
+        "title": "Design",
+        "text": "Figma-driven Delivery • UX Prototypen • Design Systems & Komponenten."
+      },
+      "platform": {
+        "title": "Plattform & Cloud",
+        "text": "Produktionsreife Infrastruktur, CI/CD und Observability."
+      }
+    }
+  },
+  "Team": {
+    "title": "Team",
+    "comingSoon": "Profile & Leadership-Details veröffentlichen wir im Februar 2026."
+  },
+  "Contact": {
+    "title": "Kontakt",
+    "lead": "Sagen Sie uns, was Sie blockiert. Wir schlagen die richtigen Leute und eine passende Delivery-Form vor.",
+    "placeholders": {
+      "email": "hello@yourcompany.com",
+      "phone": "+420 000 000 000",
+      "address": "Adresse – Placeholder"
+    },
+    "ctaTitle": "Gespräch starten",
+    "ctaText": "Beschreiben Sie kurz Problem und Timeline. Wir antworten mit einem Vorschlag.",
+    "emailLabel": "E-Mail",
+    "phoneLabel": "Telefon",
+    "notes": {
+      "privacy": "Wir nutzen deine Daten nur für die Antwort. Kein Spam."
+    },
+    "form": {
+      "name": "Name",
+      "company": "Firma (optional)",
+      "message": "Nachricht",
+      "submit": "Senden",
+      "success": "Vielen Dank für Ihre Nachricht!",
+      "error": "Es ist ein Fehler aufgetreten. Bitte versuchen Sie es später erneut."
+    }
+  }
+}

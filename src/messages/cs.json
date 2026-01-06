@@ -1,0 +1,257 @@
+{
+  "Brand": {
+    "name": "Solving Crew",
+    "short": "From problem to production",
+    "promise": "From problem to production — with the right people.",
+    "playful": "We solve all your problems.",
+    "description": "Seniorní produktový engineering. Začněte rolemi, které potřebujete, a škálujte s růstem projektů."
+  },
+  "Nav": {
+    "home": "Domů",
+    "services": "Služby",
+    "expertise": "Expertíza",
+    "technology": "Technologie",
+    "team": "Tým",
+    "contact": "Kontakt",
+    "getInTouch": "Napište nám"
+  },
+  "Footer": {
+    "ico": "IČO",
+    "dic": "DIČ",
+    "menu": "Menu",
+    "company": "Společnost"
+  },
+  "Home": {
+    "kicker": "Seniorní produktový engineering partner",
+    "subheadline": "Zkušenost z PropTech & FinTech • Delivery v EU • Začněte v malém a škálujte podle pipeline.",
+    "ctaPrimary": "Kontaktovat",
+    "ctaSecondary": "Zobrazit služby",
+    "highlights": {
+      "h1": {
+        "badge": "Řešení > šablona",
+        "title": "Odblokujeme problém, neprodáváme tabulkové squady",
+        "text": "Navrhneme nejmenší tvar týmu, který odemkne progres — a škálujeme až když to dává smysl."
+      },
+      "h2": {
+        "badge": "Produkční mentalita",
+        "title": "Build + run, spolehlivě",
+        "text": "IaC, observabilita, CI/CD a testování jsou součást dodávky – ne doplněk."
+      },
+      "h3": {
+        "badge": "Seriózní domény",
+        "title": "PropTech, FinTech, B2B SaaS",
+        "text": "Integrace, data-heavy systémy a prostředí, kde záleží na spolehlivosti."
+      }
+    },
+    "heroBullets": [
+      {
+        "title": "Malý tým, seniorně vedený",
+        "text": "Naskočíme jako kompaktní crew a rychle odblokujeme dodávku."
+      },
+      {
+        "title": "Production-first delivery",
+        "text": "CI/CD, observability a kvalita jsou součástí dodávky — ne až potom."
+      },
+      {
+        "title": "Znalost domény",
+        "text": "PropTech & FinTech zkušenost pro integračně náročné, datově bohaté systémy."
+      }
+    ],
+    "heroChip": "Obvykle odpovíme do 24 h","stackTitle": "Core tech stack",
+    "stackNote": "High-performance, event-driven architektura napříč stackem.",
+    "stack": [
+      "Java (Quarkus/Spring)",
+      "Node.js",
+      "Go",
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Postgres",
+      "NATS JetStream",
+      "ElasticSearch",
+      "Valkey/Redis",
+      "Kubernetes",
+      "Terraform",
+      "Prometheus/Grafana/Loki",
+      "AWS (EKS)",
+      "Playwright/Cypress",
+      "Figma"
+    ],
+    "ctaBlock": {
+      "title": "Řekněte, co vás brzdí",
+      "text": "Jedna role, malý pod nebo delivery lane — navrhneme tvar spolupráce, který sedne.",
+      "button": "Začít konverzaci"
+    }
+  },
+  "Services": {
+    "title": "Služby",
+    "lead": "Od problému k produkci — se správnými lidmi.",
+    "optionsTitle": "Možnosti spolupráce",
+    "availabilityBadge": "Flexibilní obsazování",
+    "processTitle": "Jak pracujeme",
+    "pricingTitle": "Obchodní podmínky",
+    "includes": [
+      "Leadership podle potřeby",
+      "QA & DevOps součástí dodávky",
+      "CI/CD, observability a release hygiena",
+      "Rituály: plánování, demíčka, retrospektivy",
+      "Dokumentace a předání",
+      "Tým komunikující anglicky",
+      "Jasné ownership a reporting",
+      "QA a code review",
+      "Překryv s EU časem",
+      "Bezpečnost a NDA ready"
+    ],
+    "cta": {
+      "button": "Ozvěte se"
+    },
+    "options": {
+      "o1": {
+        "badge": "Rozšíření týmu",
+        "title": "Doplnění expertů",
+        "text": "Backend, frontend, QA nebo DevOps přesně podle potřeby."
+      },
+      "o2": {
+        "badge": "Delivery squad",
+        "title": "Tým na výsledky",
+        "text": "Malý cross-functional tým, který dodává feature end-to-end."
+      },
+      "o3": {
+        "badge": "Záchrana projektu",
+        "title": "Když se to zasekne",
+        "text": "Audit, odblokování, stabilizace — a čisté předání."
+      }
+    },
+    "process": {
+      "p1": {
+        "title": "Pochopit",
+        "text": "Krátký call: cíle, omezení, definice úspěchu."
+      },
+      "p2": {
+        "title": "Navrhnout",
+        "text": "Doporučíme lidi a plán — typicky během pár dnů."
+      },
+      "p3": {
+        "title": "Dodat",
+        "text": "Napojíme se na váš workflow a průběžně dodáváme."
+      }
+    },
+    "pricing": {
+      "rateLabel": "Průměrná sazba vývojáře",
+      "rate": "€30 / hod",
+      "note": "Fakturace měsíčně. Bez dlouhých závazků — škálujeme podle projektů."
+    },
+    "includesTitle": "Co je v ceně"
+  },
+  "Expertise": {
+    "title": "Expertíza",
+    "lead": "Děláme v komplexních doménách, kde záleží na spolehlivosti, rychlosti a čisté komunikaci.",
+    "capabilitiesTitle": "Co umíme",
+    "capabilities": [
+      "Product engineering (od discovery do produkce)",
+      "Architektura & tech leadership",
+      "High-load backend & event-driven systémy",
+      "Data-heavy integrace a API",
+      "Cloud & DevOps (Kubernetes, IaC, observabilita)",
+      "QA automatizace & quality engineering",
+      "Design systémy & UX delivery"
+    ],
+    "areas": {
+      "proptech": {
+        "title": "PropTech",
+        "text": "Inzerce, valuace, integrace, back-office workflow, reporting a zákaznické portály."
+      },
+      "fintech": {
+        "title": "FinTech",
+        "text": "Platby, identita, compliance citlivé flow a auditovatelná dodávka."
+      },
+      "highload": {
+        "title": "High-load & platformy",
+        "text": "Event-driven architektura, výkon, škálování, observabilita a operations."
+      }
+    },
+    "areasBadge": {
+      "proptech": {
+        "badge": "PropTech"
+      },
+      "fintech": {
+        "badge": "FinTech"
+      },
+      "highload": {
+        "badge": "High-load"
+      }
+    }
+  },
+  "Technology": {
+    "title": "Technologie",
+    "lead": "Moderní stack, produkčně orientované inženýrství a pragmatické volby podle constraintů.",
+    "sectionsTitle": "Oblasti",
+    "principlesTitle": "Principy",
+    "principles": [
+      "Dodávat po malých krocích",
+      "Měřit a pozorovat",
+      "Automatizovat kvalitu",
+      "Navrhovat pro ownership",
+      "Snižovat operativní zátěž",
+      "Měřit dopad"
+    ],
+    "sections": {
+      "backend": {
+        "title": "Backend",
+        "text": "Java (Quarkus/Spring), Node.js, Go • microservices • REST/GraphQL • event-driven messaging."
+      },
+      "frontend": {
+        "title": "Frontend",
+        "text": "React, Next.js, TypeScript • design system • přístupnost • výkon."
+      },
+      "mobile": {
+        "title": "Mobile",
+        "text": "Pragmatická mobilní dodávka podle potřeby (hybrid / native podle constraintů)."
+      },
+      "data": {
+        "title": "Data & search",
+        "text": "Postgres, ElasticSearch • datové pipeline • modely vhodné pro analytiku."
+      },
+      "quality": {
+        "title": "Quality engineering",
+        "text": "Automation-first • Playwright/Cypress • contract testing tam, kde se vyplatí."
+      },
+      "platform": {
+        "title": "Platforma & Cloud",
+        "text": "Infrastruktura pro produkci, CI/CD a observabilita."
+      },
+      "design": {
+        "title": "Design",
+        "text": "Figma-driven delivery • UX prototypy • design system a komponenty."
+      }
+    }
+  },
+  "Team": {
+    "title": "Tým",
+    "comingSoon": "Profily a detaily o vedení zveřejníme v únoru 2026."
+  },
+  "Contact": {
+    "title": "Kontakt",
+    "lead": "Popište, co vás brzdí. Navrhneme správné lidi a tvar spolupráce.",
+    "placeholders": {
+      "email": "hello@yourcompany.com",
+      "phone": "+420 000 000 000",
+      "address": "Adresa – placeholder"
+    },
+    "ctaTitle": "Začněme",
+    "ctaText": "Stručně popište problém a očekávaný timeline. Ozveme se s návrhem.",
+    "emailLabel": "E-mail",
+    "phoneLabel": "Telefon",
+    "notes": {
+      "privacy": "Použijeme vaše údaje jen k odpovědi. Žádný spam."
+    },
+    "form": {
+      "name": "Jméno",
+      "company": "Firma (volitelné)",
+      "message": "Zpráva",
+      "submit": "Odeslat",
+      "success": "Děkujeme za zprávu!",
+      "error": "Omlouváme se, něco se pokazilo. Zkuste to prosím znovu."
+    }
+  }
+}
