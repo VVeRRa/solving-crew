@@ -1,11 +1,17 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Orbitron } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/cn";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
+});
+
+const brand = Orbitron({
+  subsets: ["latin"],
+  weight: ["400", "500", "600"], // uprav dle potřeby
+  variable: "--font-brand",
 });
 
 const geistMono = Geist_Mono({
@@ -41,7 +47,7 @@ const jsonLd = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={cn(geistSans.variable, geistMono.variable, "antialiased")}>
+      <body className={cn(geistSans.variable, geistMono.variable, brand.variable, "antialiased")}>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

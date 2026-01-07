@@ -32,7 +32,7 @@ export default function SiteHeader() {
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         {/* Top row */}
         <div className="flex justify-between items-center gap-3 py-2 sm:py-3">
-          <Link href="/" className="flex items-center gap-3 shrink-0 leading-tight">
+          <Link href="/" className="flex items-center gap-3 ">
             <img
               src="/brand/solving-crew.svg"
               alt="Solving Crew"

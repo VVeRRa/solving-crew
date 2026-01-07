@@ -79,12 +79,27 @@ export default async function ContactPage({
                                 labels={{
                                     name: t('form.name'),
                                     company: t('form.company'),
-                                    email: t('emailLabel'),
-                                    phone: t('phoneLabel'),
+                                    email: t('form.email'),
+                                    phone: t('form.phone'),
                                     message: t('form.message'),
                                     submit: t('form.submit'),
                                     success: t('form.success'),
-                                    error: t('form.error')
+                                    error: t('form.error'),
+
+                                    helper: {
+                                        messageHint: t.raw('form.helper.messageHint') as string
+                                    },
+                                    validation: {
+                                        nameRequired: t('form.validation.nameRequired'),
+                                        nameTooLong: t.raw('form.validation.nameTooLong') as string,
+                                        companyTooLong: t.raw('form.validation.companyTooLong') as string,
+                                        emailRequired: t('form.validation.emailRequired'),
+                                        emailInvalid: t('form.validation.emailInvalid'),
+                                        phoneTooLong: t.raw('form.validation.phoneTooLong') as string,
+                                        messageRequired: t('form.validation.messageRequired'),
+                                        messageTooShort: t.raw('form.validation.messageTooShort') as string,
+                                        messageTooLong: t.raw('form.validation.messageTooLong') as string
+                                    }
                                 }}
                             />
                         </CardContent>

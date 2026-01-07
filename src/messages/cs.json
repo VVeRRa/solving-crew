@@ -57,7 +57,8 @@
         "text": "PropTech & FinTech zkušenost pro integračně náročné, datově bohaté systémy."
       }
     ],
-    "heroChip": "Obvykle odpovíme do 24 h","stackTitle": "Core tech stack",
+    "heroChip": "Obvykle odpovíme do 24 h",
+    "stackTitle": "Core tech stack",
     "stackNote": "High-performance, event-driven architektura napříč stackem.",
     "stack": [
       "Java (Quarkus/Spring)",
@@ -247,11 +248,27 @@
     },
     "form": {
       "name": "Jméno",
-      "company": "Firma (volitelné)",
+      "company": "Firma (nepovinné)",
+      "email": "E-mail",
+      "phone": "Telefon (nepovinné)",
       "message": "Zpráva",
       "submit": "Odeslat",
-      "success": "Děkujeme za zprávu!",
-      "error": "Omlouváme se, něco se pokazilo. Zkuste to prosím znovu."
+      "success": "Děkujeme! Ozveme se co nejdříve.",
+      "error": "Něco se pokazilo. Zkuste to prosím znovu.",
+      "helper": {
+        "messageHint": "Min {min} • {current}/{max}"
+      },
+      "validation": {
+        "nameRequired": "Zadejte prosím své jméno.",
+        "nameTooLong": "Jméno může mít maximálně {max} znaků.",
+        "companyTooLong": "Firma může mít maximálně {max} znaků.",
+        "emailRequired": "Zadejte prosím e-mail.",
+        "emailInvalid": "Zadejte prosím platný e-mail.",
+        "phoneTooLong": "Telefon může mít maximálně {max} znaků.",
+        "messageRequired": "Zadejte prosím zprávu.",
+        "messageTooShort": "Zpráva musí mít alespoň {min} znaků.",
+        "messageTooLong": "Zpráva může mít maximálně {max} znaků."
+      }
     }
   }
 }

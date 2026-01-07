@@ -44,20 +44,20 @@
       }
     },
     "heroBullets": [
-        {
-          "title": "Small team, senior-led",
-          "text": "We join as a compact crew that unblocks delivery fast."
-        },
-        {
-          "title": "Production-first delivery",
-          "text": "CI/CD, observability and quality are part of delivery — not an afterthought."
-        },
-        {
-          "title": "Domain depth",
-          "text": "PropTech & FinTech experience for integration-heavy, data-rich systems."
-        }
-      ],
-      "heroChip": "Typically reply within 24h",
+      {
+        "title": "Small team, senior-led",
+        "text": "We join as a compact crew that unblocks delivery fast."
+      },
+      {
+        "title": "Production-first delivery",
+        "text": "CI/CD, observability and quality are part of delivery — not an afterthought."
+      },
+      {
+        "title": "Domain depth",
+        "text": "PropTech & FinTech experience for integration-heavy, data-rich systems."
+      }
+    ],
+    "heroChip": "Typically reply within 24h",
     "stackTitle": "Core tech stack",
     "stackNote": "High-performance, event-driven architecture across the full stack.",
     "stack": [
@@ -260,12 +260,28 @@
       "privacy": "We’ll only use your details to respond. No spam."
     },
     "form": {
-      "name": "Your name",
+      "name": "Name",
       "company": "Company (optional)",
+      "email": "Email",
+      "phone": "Phone (optional)",
       "message": "Message",
       "submit": "Send",
-      "success": "Thank you for your message!",
-      "error": "An error occurred. Please try again later."
+      "success": "Thanks! We’ll get back to you soon.",
+      "error": "Something went wrong. Please try again.",
+      "helper": {
+        "messageHint": "Min {min} • {current}/{max}"
+      },
+      "validation": {
+        "nameRequired": "Please enter your name.",
+        "nameTooLong": "Name can be at most {max} characters.",
+        "companyTooLong": "Company can be at most {max} characters.",
+        "emailRequired": "Please enter your email.",
+        "emailInvalid": "Please enter a valid email address.",
+        "phoneTooLong": "Phone can be at most {max} characters.",
+        "messageRequired": "Please enter a message.",
+        "messageTooShort": "Message must be at least {min} characters.",
+        "messageTooLong": "Message can be at most {max} characters."
+      }
     }
   }
 }

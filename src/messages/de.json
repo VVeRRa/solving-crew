@@ -248,11 +248,26 @@
     },
     "form": {
       "name": "Name",
-      "company": "Firma (optional)",
-      "message": "Nachricht",
-      "submit": "Senden",
-      "success": "Vielen Dank für Ihre Nachricht!",
-      "error": "Es ist ein Fehler aufgetreten. Bitte versuchen Sie es später erneut."
-    }
+    "company": "Firma (optional)",
+    "email": "E-Mail",
+    "phone": "Telefon (optional)",
+    "message": "Nachricht",
+    "submit": "Senden",
+    "success": "Danke! Wir melden uns bald.",
+    "error": "Etwas ist schiefgelaufen. Bitte versuche es erneut.",
+    "helper": {
+      "messageHint": "Min. {min} • {current}/{max}"
+    },
+    "validation": {
+      "nameRequired": "Bitte gib deinen Namen ein.",
+      "nameTooLong": "Name darf höchstens {max} Zeichen haben.",
+      "companyTooLong": "Firma darf höchstens {max} Zeichen haben.",
+      "emailRequired": "Bitte gib deine E-Mail-Adresse ein.",
+      "emailInvalid": "Bitte gib eine gültige E-Mail-Adresse ein.",
+      "phoneTooLong": "Telefon darf höchstens {max} Zeichen haben.",
+      "messageRequired": "Bitte gib eine Nachricht ein.",
+      "messageTooShort": "Nachricht muss mindestens {min} Zeichen haben.",
+      "messageTooLong": "Nachricht darf höchstens {max} Zeichen haben."
+    }}
   }
 }

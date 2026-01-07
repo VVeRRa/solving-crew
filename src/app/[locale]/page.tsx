@@ -61,7 +61,7 @@ export default async function HomePage({
                             {tHome('kicker')}
                         </Badge>
 
-                        <h1 className="text-4xl md:text-5xl font-semibold tracking-tight">
+                        <h1 className="brand-font text-4xl md:text-5xl font-semibold tracking-tight">
                             {tBrand('name')}
                         </h1>
 

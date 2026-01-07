@@ -1,19 +1,20 @@
 import { NextResponse } from 'next/server';
 import { z } from 'zod';
 import { Resend } from 'resend';
+import { ZodError } from "zod";
 
 export const runtime = 'nodejs';
 
 const schema = z.object({
+    company: z.string().max(120).optional().nullable().transform(v => v ?? ''),
+    phone: z.string().max(50).optional().nullable().transform(v => v ?? ''),
+    website: z.string().optional().nullable().transform(v => v ?? ''),
+    locale: z.string().optional().nullable().transform(v => v ?? undefined),
     name: z.string().min(1).max(120),
-    company: z.string().max(120).optional().or(z.literal('')),
     email: z.string().email(),
-    phone: z.string().max(50).optional().or(z.literal('')),
     message: z.string().min(5).max(5000),
 
     // anti-spam honeypot
-    website: z.string().optional().or(z.literal('')),
-    locale: z.string().optional()
 });
 
 const resend = new Resend(process.env.RESEND_API_KEY);
@@ -52,18 +53,27 @@ export async function POST(req: Request) {
 
         await resend.emails.send({
             from,
-            to,
+            to: [to],
             subject,
             text,
-            replyTo: data.email
+            replyTo: data.email,
         });
 
         return NextResponse.json({ ok: true }, { status: 200 });
     } catch (e: any) {
         // zod validation -> 400
-        if (e?.name === 'ZodError') {
-            return NextResponse.json({ ok: false, error: 'Invalid payload' }, { status: 400 });
+        if (e instanceof ZodError) {
+            return NextResponse.json(
+                { ok: false, error: "Invalid payload", issues: e.flatten() },
+                { status: 400 }
+            );
         }
-        return NextResponse.json({ ok: false, error: 'Send failed' }, { status: 500 });
+        if (e?.name === "ZodError") {
+            return NextResponse.json(
+                { ok: false, error: "Invalid payload", issues: e.flatten() },
+                { status: 400 }
+            );
+        }
+        return NextResponse.json({ ok: false, error: "Send failed", details: String(e) }, { status: 500 });
     }
 }
