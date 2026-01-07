@@ -5,6 +5,7 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { ButtonLink } from '@/components/ui/button';
 import PageLayout from '@/components/PageLayout';
+import { FadeIn, FadeInStagger, FadeInItem } from '@/components/FadeIn';
 
 export default async function TechnologyPage({
     params
@@ -31,56 +32,59 @@ export default async function TechnologyPage({
     return (
         <PageLayout>
             <Page className="space-y-14">
-                <SectionHeader  title={t('title')} lead={t('lead')} />
+                <SectionHeader title={t('title')} lead={t('lead')} />
 
                 <Section className="space-y-6">
-                    <div className="grid gap-6 md:grid-cols-2 items-stretch">
+                    <FadeInStagger className="grid gap-6 md:grid-cols-2 items-stretch">
                         {sections.map(({ key, scheme }) => (
-                            <Card
-                                key={key}
-                                variant="glass"
-                                accent="stripe"
-                                scheme={scheme}
-                                className="h-full"
-                            >
-                                <CardContent className="space-y-3">
+                            <FadeInItem key={key} className="h-full">
+                                <Card
+                                    variant="glass"
+                                    accent="stripe"
+                                    scheme={scheme}
+                                    className="h-full"
+                                >
+                                    <CardContent className="space-y-3">
 
 
-                                    <div className="font-semibold">{t(`sections.${key}.title`)} </div>
-                                    <div className="text-slate-700 dark:text-slate-300">
-                                        {t(`sections.${key}.text`)}
-                                    </div>
-                                </CardContent>
-                            </Card>
+                                        <div className="font-semibold">{t(`sections.${key}.title`)} </div>
+                                        <div className="text-slate-700 dark:text-slate-300">
+                                            {t(`sections.${key}.text`)}
+                                        </div>
+                                    </CardContent>
+                                </Card>
+                            </FadeInItem>
                         ))}
-                    </div>
+                    </FadeInStagger>
                 </Section>
 
-                <Card variant="gradient" scheme="indigo" accent="corner" className="rounded-[22px]">
-                    <CardContent className="space-y-4">
-                        <h2 className="text-2xl font-semibold">{t('principlesTitle')}</h2>
+                <FadeIn delay={0.2}>
+                    <Card variant="gradient" scheme="indigo" accent="corner" className="rounded-[22px]">
+                        <CardContent className="space-y-4">
+                            <h2 className="text-2xl font-semibold">{t('principlesTitle')}</h2>
 
-                        <div className="grid md:grid-cols-2 gap-3">
-                            {principles.map((x) => (
-                                <div
-                                    key={x}
-                                    className="rounded-xl border border-slate-200 bg-white/70 p-4 dark:border-slate-800 dark:bg-black/20"
-                                >
-                                    <div className="text-slate-700 dark:text-slate-300">{x}</div>
-                                </div>
-                            ))}
-                        </div>
+                            <div className="grid md:grid-cols-2 gap-3">
+                                {principles.map((x) => (
+                                    <div
+                                        key={x}
+                                        className="rounded-xl border border-slate-200 bg-white/70 p-4 dark:border-slate-800 dark:bg-black/20"
+                                    >
+                                        <div className="text-slate-700 dark:text-slate-300">{x}</div>
+                                    </div>
+                                ))}
+                            </div>
 
-                        <div className="pt-2 flex gap-3">
-                            <ButtonLink href="/services" variant="secondary">
-                                {nav('services')}
-                            </ButtonLink>
-                            <ButtonLink href="/contact" variant="primary">
-                                {nav('contact')}
-                            </ButtonLink>
-                        </div>
-                    </CardContent>
-                </Card>
+                            <div className="pt-2 flex gap-3">
+                                <ButtonLink href="/services" variant="secondary">
+                                    {nav('services')}
+                                </ButtonLink>
+                                <ButtonLink href="/contact" variant="primary">
+                                    {nav('contact')}
+                                </ButtonLink>
+                            </div>
+                        </CardContent>
+                    </Card>
+                </FadeIn>
             </Page>
         </PageLayout>);
 }

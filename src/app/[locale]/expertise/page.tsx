@@ -6,6 +6,8 @@ import { Card, CardContent } from '@/components/ui/card';
 import { ButtonLink } from '@/components/ui/button';
 import PageLayout from '@/components/PageLayout';
 
+import { FadeIn, FadeInStagger, FadeInItem } from '@/components/FadeIn';
+
 export default async function ExpertisePage({
     params
 }: {
@@ -28,41 +30,46 @@ export default async function ExpertisePage({
     return (
         <PageLayout>
             <Page className="space-y-14">
-                <SectionHeader  title={t('title')} lead={t('lead')} />
+                <SectionHeader title={t('title')} lead={t('lead')} />
 
                 <Section className="space-y-6">
-                    <div className="grid gap-6 md:grid-cols-3 items-stretch">
+                    <FadeInStagger className="grid gap-6 md:grid-cols-3 items-stretch">
                         {areas.map(({ key, scheme }) => (
-                            <Card key={key} variant="glass" accent="stripe" scheme={scheme}>
-                                <CardContent className="space-y-3">
-                                    
+                            <FadeInItem key={key} className="h-full">
+                                <Card variant="glass" accent="stripe" scheme={scheme} className="h-full">
+                                    <CardContent className="space-y-3">
 
-                                    <div className="font-semibold">{t(`areas.${key}.title`)}</div>
-                                    <div className="text-slate-700 dark:text-slate-300">{t(`areas.${key}.text`)}</div>
-                                </CardContent>
-                            </Card>
-                        ))}</div>
+
+                                        <div className="font-semibold">{t(`areas.${key}.title`)}</div>
+                                        <div className="text-slate-700 dark:text-slate-300">{t(`areas.${key}.text`)}</div>
+                                    </CardContent>
+                                </Card>
+                            </FadeInItem>
+                        ))}
+                    </FadeInStagger>
                 </Section>
 
-                <Card variant="gradient" scheme="blue" accent="corner" className="rounded-[22px]">
-                    <CardContent className="space-y-4">
-                        <h2 className="text-2xl font-semibold">{t('capabilitiesTitle')}</h2>
-                        <ul className="grid md:grid-cols-2 gap-2 text-slate-700 dark:text-slate-300">
-                            {capabilities.map((x) => (
-                                <li key={x} className="flex gap-2">
-                                    <span className="mt-2 h-2 w-2 rounded-full bg-blue-500/80" />
-                                    <span>{x}</span>
-                                </li>
-                            ))}
-                        </ul>
+                <FadeIn delay={0.2}>
+                    <Card variant="gradient" scheme="blue" accent="corner" className="rounded-[22px]">
+                        <CardContent className="space-y-4">
+                            <h2 className="text-2xl font-semibold">{t('capabilitiesTitle')}</h2>
+                            <ul className="grid md:grid-cols-2 gap-2 text-slate-700 dark:text-slate-300">
+                                {capabilities.map((x) => (
+                                    <li key={x} className="flex gap-2">
+                                        <span className="mt-2 h-2 w-2 rounded-full bg-blue-500/80" />
+                                        <span>{x}</span>
+                                    </li>
+                                ))}
+                            </ul>
 
-                        <div className="pt-2">
-                            <ButtonLink href="/contact" variant="primary">
-                                {nav('contact')}
-                            </ButtonLink>
-                        </div>
-                    </CardContent>
-                </Card>
+                            <div className="pt-2">
+                                <ButtonLink href="/contact" variant="primary">
+                                    {nav('contact')}
+                                </ButtonLink>
+                            </div>
+                        </CardContent>
+                    </Card>
+                </FadeIn>
             </Page>
         </PageLayout>);
 }
