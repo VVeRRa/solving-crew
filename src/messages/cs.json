@@ -15,11 +15,23 @@
     "contact": "Kontakt",
     "getInTouch": "Napište nám"
   },
+  "Common": {
+    "step": "Krok"
+  },
   "Footer": {
     "ico": "IČO",
     "dic": "DIČ",
     "menu": "Menu",
-    "company": "Společnost"
+    "company": "Společnost",
+    "contact": "Kontakt",
+    "ctaTitle": "Připraveni transformovat <highlight>vaše nápady?</highlight>",
+    "ctaSubtitle": "Pojďme probrat, jak vám můžeme pomoci vybudovat další velkou věc.",
+    "brandText": "Seniorní inženýrský tým dodávající vysoce kvalitní webové aplikace a digitální produkty s vášní.",
+    "privacy": "Zásady ochrany osobních údajů",
+    "terms": "Podmínky služby",
+    "rights": "Všechna práva vyhrazena.",
+    "legalName": "Solving Crew s.r.o.",
+    "address": "Praha, Česká republika"
   },
   "Home": {
     "kicker": "Seniorní produktový engineering partner",

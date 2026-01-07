@@ -15,11 +15,23 @@
     "contact": "Contact",
     "getInTouch": "Get in touch"
   },
+  "Common": {
+    "step": "Step"
+  },
   "Footer": {
     "ico": "IČO",
     "dic": "DIČ",
     "menu": "Menu",
-    "company": "Company"
+    "company": "Company",
+    "contact": "Contact",
+    "ctaTitle": "Ready to transform <highlight>your ideas?</highlight>",
+    "ctaSubtitle": "Let's discuss how we can help you build the next big thing.",
+    "brandText": "Senior engineering team delivering high-quality web applications and digital products with passion.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "rights": "All rights reserved.",
+    "legalName": "Solving Crew s.r.o.",
+    "address": "Prague, Czech Republic"
   },
   "Home": {
     "kicker": "Senior-led product engineering partner",

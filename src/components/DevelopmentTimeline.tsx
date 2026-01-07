@@ -15,9 +15,10 @@ interface TimelineItem {
 interface DevelopmentTimelineProps {
     items: TimelineItem[];
     title?: string;
+    stepLabel?: string;
 }
 
-export function DevelopmentTimeline({ items, title }: DevelopmentTimelineProps) {
+export function DevelopmentTimeline({ items, title, stepLabel = "Step" }: DevelopmentTimelineProps) {
     const containerRef = useRef<HTMLDivElement>(null);
     const [activeStep, setActiveStep] = useState(0);
 
@@ -74,7 +75,7 @@ export function DevelopmentTimeline({ items, title }: DevelopmentTimelineProps) 
                     viewport={{ once: true }}
                     className="relative z-10 mb-12 text-center"
                 >
-                    <h2 className="text-3xl md:text-5xl font-bold text-slate-900 dark:text-white tracking-tighter">
+                    <h2 className="brand-font text-3xl md:text-5xl font-bold text-slate-900 dark:text-white tracking-tighter">
                         {title}
                     </h2>
                 </motion.div>
@@ -99,6 +100,7 @@ export function DevelopmentTimeline({ items, title }: DevelopmentTimelineProps) 
                                 index={index}
                                 isActive={index < activeStep}
                                 isNext={index === activeStep - 1}
+                                stepLabel={stepLabel}
                             />
                         );
                     })}
@@ -108,7 +110,7 @@ export function DevelopmentTimeline({ items, title }: DevelopmentTimelineProps) 
     );
 }
 
-function TimelineCard({ item, index, isActive, isNext }: { item: TimelineItem, index: number, isActive: boolean, isNext: boolean }) {
+function TimelineCard({ item, index, isActive, isNext, stepLabel }: { item: TimelineItem, index: number, isActive: boolean, isNext: boolean, stepLabel: string }) {
     const isEven = index % 2 === 0;
 
     return (
@@ -152,7 +154,7 @@ function TimelineCard({ item, index, isActive, isNext }: { item: TimelineItem, i
                             0{index + 1}
                         </span>
                         <Badge variant="outline" className="border-slate-200 dark:border-neutral-700 text-slate-500 dark:text-neutral-400 bg-white/50 dark:bg-neutral-900/50">
-                            Step 0{index + 1}
+                            {stepLabel} 0{index + 1}
                         </Badge>
                     </div>
 

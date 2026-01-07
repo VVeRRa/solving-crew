@@ -15,11 +15,23 @@
     "contact": "Kontakt",
     "getInTouch": "Kontakt aufnehmen"
   },
+  "Common": {
+    "step": "Schritt"
+  },
   "Footer": {
     "ico": "IČO",
     "dic": "DIČ",
-    "menu": "Menu",
-    "company": "Firma"
+    "menu": "Menü",
+    "company": "Unternehmen",
+    "contact": "Kontakt",
+    "ctaTitle": "Bereit, <highlight>Ihre Ideen</highlight> zu transformieren?",
+    "ctaSubtitle": "Lassen Sie uns besprechen, wie wir Ihnen helfen können, das nächste große Ding zu bauen.",
+    "brandText": "Senior-Engineering-Team, das hochwertige Webanwendungen und digitale Produkte mit Leidenschaft liefert.",
+    "privacy": "Datenschutzrichtlinie",
+    "terms": "Nutzungsbedingungen",
+    "rights": "Alle Rechte vorbehalten.",
+    "legalName": "Solving Crew s.r.o.",
+    "address": "Prag, Tschechische Republik"
   },
   "Home": {
     "kicker": "Senior-geführter Product-Engineering-Partner",
@@ -248,26 +260,27 @@
     },
     "form": {
       "name": "Name",
-    "company": "Firma (optional)",
-    "email": "E-Mail",
-    "phone": "Telefon (optional)",
-    "message": "Nachricht",
-    "submit": "Senden",
-    "success": "Danke! Wir melden uns bald.",
-    "error": "Etwas ist schiefgelaufen. Bitte versuche es erneut.",
-    "helper": {
-      "messageHint": "Min. {min} • {current}/{max}"
-    },
-    "validation": {
-      "nameRequired": "Bitte gib deinen Namen ein.",
-      "nameTooLong": "Name darf höchstens {max} Zeichen haben.",
-      "companyTooLong": "Firma darf höchstens {max} Zeichen haben.",
-      "emailRequired": "Bitte gib deine E-Mail-Adresse ein.",
-      "emailInvalid": "Bitte gib eine gültige E-Mail-Adresse ein.",
-      "phoneTooLong": "Telefon darf höchstens {max} Zeichen haben.",
-      "messageRequired": "Bitte gib eine Nachricht ein.",
-      "messageTooShort": "Nachricht muss mindestens {min} Zeichen haben.",
-      "messageTooLong": "Nachricht darf höchstens {max} Zeichen haben."
-    }}
+      "company": "Firma (optional)",
+      "email": "E-Mail",
+      "phone": "Telefon (optional)",
+      "message": "Nachricht",
+      "submit": "Senden",
+      "success": "Danke! Wir melden uns bald.",
+      "error": "Etwas ist schiefgelaufen. Bitte versuche es erneut.",
+      "helper": {
+        "messageHint": "Min. {min} • {current}/{max}"
+      },
+      "validation": {
+        "nameRequired": "Bitte gib deinen Namen ein.",
+        "nameTooLong": "Name darf höchstens {max} Zeichen haben.",
+        "companyTooLong": "Firma darf höchstens {max} Zeichen haben.",
+        "emailRequired": "Bitte gib deine E-Mail-Adresse ein.",
+        "emailInvalid": "Bitte gib eine gültige E-Mail-Adresse ein.",
+        "phoneTooLong": "Telefon darf höchstens {max} Zeichen haben.",
+        "messageRequired": "Bitte gib eine Nachricht ein.",
+        "messageTooShort": "Nachricht muss mindestens {min} Zeichen haben.",
+        "messageTooLong": "Nachricht darf höchstens {max} Zeichen haben."
+      }
+    }
   }
 }

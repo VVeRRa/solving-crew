@@ -17,6 +17,7 @@ export default async function ServicesPage({
   setRequestLocale(locale);
 
   const t = await getTranslations('Services');
+  const tCommon = await getTranslations('Common');
 
   const includesRaw = t.raw('includes');
   const includes = Array.isArray(includesRaw) ? (includesRaw as string[]) : [];
@@ -67,6 +68,7 @@ export default async function ServicesPage({
         <Section>
           <DevelopmentTimeline
             title={t('processTitle')}
+            stepLabel={tCommon('step')}
             items={process.map(k => ({
               id: k,
               title: t(`process.${k}.title`),
@@ -78,7 +80,7 @@ export default async function ServicesPage({
         {/* Pricing + Includes */}
         <Section className="grid md:grid-cols-2 gap-6">
           {/* Pricing (zjemněno: glass místo gradientu) */}
-          <FadeIn direction="left" delay={0.2}>
+          <FadeIn delay={0.2}>
             <Card
               variant="glass"
               accent="stripe"
@@ -100,7 +102,7 @@ export default async function ServicesPage({
             </Card>
           </FadeIn>
 
-          <FadeIn direction="right" delay={0.2}>
+          <FadeIn delay={0.2}>
             <Card
               variant="glass"
               accent="stripe"

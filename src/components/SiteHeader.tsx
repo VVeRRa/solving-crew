@@ -1,9 +1,9 @@
 'use client';
 
-import {useLocale, useTranslations} from 'next-intl';
-import {routing} from '@/i18n/routing';
-import {Link, usePathname, useRouter} from '@/i18n/navigation';
-import {ButtonLink} from '@/components/ui/button';
+import { useLocale, useTranslations } from 'next-intl';
+import { routing } from '@/i18n/routing';
+import { Link, usePathname, useRouter } from '@/i18n/navigation';
+import { ButtonLink } from '@/components/ui/button';
 import ThemeToggle from '@/components/ThemeToggle';
 
 export default function SiteHeader() {
@@ -15,12 +15,12 @@ export default function SiteHeader() {
   const router = useRouter();
 
   const nav = [
-    {href: '/', label: tNav('home')},
-    {href: '/services', label: tNav('services')},
-    {href: '/expertise', label: tNav('expertise')},
-    {href: '/technology', label: tNav('technology')},
-    {href: '/team', label: tNav('team')},
-    {href: '/contact', label: tNav('contact')}
+    { href: '/', label: tNav('home') },
+    { href: '/services', label: tNav('services') },
+    { href: '/expertise', label: tNav('expertise') },
+    { href: '/technology', label: tNav('technology') },
+    { href: '/team', label: tNav('team') },
+    { href: '/contact', label: tNav('contact') }
   ] as const;
 
   return (
@@ -35,7 +35,7 @@ export default function SiteHeader() {
           <Link href="/" className="flex items-center gap-3 ">
             <img
               src="/brand/solving-crew.svg"
-              alt="Solving Crew"
+              alt={tBrand('name')}
               className="h-10 sm:h-16 w-auto"
             />
             <div className="hidden sm:block text-xs text-slate-600 dark:text-slate-300">
@@ -58,7 +58,7 @@ export default function SiteHeader() {
           <div className="flex items-center gap-2">
             <select
               value={locale}
-              onChange={(e) => router.replace(pathname, {locale: e.target.value as any})}
+              onChange={(e) => router.replace(pathname, { locale: e.target.value as any })}
               className="h-9 sm:h-10 w-[72px] sm:w-[86px] rounded-lg border border-slate-200 bg-white/70 px-2 sm:px-3 text-sm text-slate-700 shadow-sm dark:border-slate-800 dark:bg-black/25 dark:text-slate-200"
               aria-label="Language"
             >

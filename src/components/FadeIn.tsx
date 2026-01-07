@@ -9,6 +9,8 @@ interface FadeInProps {
     delay?: number;
     direction?: 'up' | 'down' | 'left' | 'right' | 'none';
     fullWidth?: boolean;
+    viewportMargin?: string;
+    amount?: number | "some" | "all";
 }
 
 export function FadeIn({
@@ -16,23 +18,27 @@ export function FadeIn({
     className = "",
     delay = 0,
     direction = 'up',
-    fullWidth = false
+    fullWidth = false,
+    viewportMargin = "-10%",
+    amount = "some"
 }: FadeInProps) {
     const ref = useRef(null);
-    const isInView = useInView(ref, { once: true, margin: "-10%" });
+    const isInView = useInView(ref, { once: false, margin: viewportMargin as any, amount });
 
     const variants: Variants = {
         hidden: {
             opacity: 0,
-            y: direction === 'up' ? 40 : direction === 'down' ? -40 : 0,
-            x: direction === 'left' ? 40 : direction === 'right' ? -40 : 0,
+            y: direction === 'up' ? 60 : direction === 'down' ? -60 : 0,
+            x: direction === 'left' ? 60 : direction === 'right' ? -60 : 0,
+            scale: 0.95,
         },
         visible: {
             opacity: 1,
             y: 0,
             x: 0,
+            scale: 1,
             transition: {
-                duration: 0.7,
+                duration: 0.9,
                 ease: [0.21, 0.47, 0.32, 0.98], // graceful ease-out
                 delay: delay
             }
@@ -46,6 +52,7 @@ export function FadeIn({
             initial="hidden"
             animate={isInView ? "visible" : "hidden"}
             className={fullWidth ? `w-full ${className}` : className}
+            style={{ willChange: "transform, opacity, filter" }}
         >
             {children}
         </motion.div>
@@ -55,14 +62,18 @@ export function FadeIn({
 export function FadeInStagger({
     children,
     className = "",
-    faster = false
+    faster = false,
+    viewportMargin = "-10%",
+    amount = "some"
 }: {
     children: React.ReactNode;
     className?: string;
     faster?: boolean;
+    viewportMargin?: string;
+    amount?: number | "some" | "all";
 }) {
     const ref = useRef(null);
-    const isInView = useInView(ref, { once: true, margin: "-10%" });
+    const isInView = useInView(ref, { once: false, margin: viewportMargin as any, amount });
 
     return (
         <motion.div
@@ -79,11 +90,12 @@ export function FadeInStagger({
 
 export function FadeInItem({ children, className = "" }: { children: React.ReactNode; className?: string }) {
     const variants: Variants = {
-        hidden: { opacity: 0, y: 20 },
+        hidden: { opacity: 0, y: 40, scale: 0.95 },
         visible: {
             opacity: 1,
             y: 0,
-            transition: { duration: 0.5, ease: "easeOut" }
+            scale: 1,
+            transition: { duration: 0.6, ease: "easeOut" }
         }
     };
 
